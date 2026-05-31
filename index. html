@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>عيادة السعد لطب الأسنان | Al Saad Dental Clinic</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0f766e',
+            secondary: '#14b8a6',
+            dark: '#0f172a',
+            light: '#f8fafc',
+          },
+          boxShadow: {
+            premium: '0 15px 45px rgba(15, 118, 110, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body{
+      font-family:'Cairo',sans-serif;
+      background:#f8fafc;
+      overflow-x:hidden;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-gradient{
+      background:
+      radial-gradient(circle at top right, rgba(20,184,166,0.12), transparent 30%),
+      radial-gradient(circle at bottom left, rgba(15,118,110,0.12), transparent 35%);
+    }
+
+    .premium-border{
+      border:1px solid rgba(20,184,166,0.12);
+    }
+
+    .floating-animation{
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+    }
+
+    .bg-banner{
+      background-image:
+      linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
+      url('photo3.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+    }
+
+    ::selection{
+      background:#14b8a6;
+      color:white;
+    }
+
+    ::-webkit-scrollbar{
+      width:8px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background:#14b8a6;
+      border-radius:20px;
+    }
+  </style>
+</head>
+
+<body class="text-dark">
+
+  <!-- HEADER -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-5">
+      <div class="glass border border-white/40 rounded-full mt-4 px-6 py-4 flex items-center justify-between shadow-premium">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center text-xl shadow-lg">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+
+          <div>
+            <h1 class="font-black text-lg md:text-xl text-primary">
+              عيادة السعد لطب الأسنان
+            </h1>
+
+            <p class="text-xs text-slate-500">
+              Al Saad Dental Clinic
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm">
+          <a href="#home" class="hover:text-primary transition">الرئيسية</a>
+          <a href="#services" class="hover:text-primary transition">الخدمات</a>
+          <a href="#reviews" class="hover:text-primary transition">التقييمات</a>
+          <a href="#contact" class="hover:text-primary transition">التواصل</a>
+        </nav>
+
+        <!-- CTA -->
+        <a href="tel:+971505007764"
+           class="hidden md:flex items-center gap-2 bg-gradient-to-l from-primary to-secondary text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition">
+
+          <i class="fa-solid fa-phone"></i>
+          احجز الآن
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center pt-36 pb-20">
+
+    <div class="container mx-auto px-5">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- TEXT -->
+        <div>
+
+          <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-5 py-2 rounded-full font-bold text-sm mb-7">
+            <i class="fa-solid fa-star text-yellow-400"></i>
+            4.8 Stars • +110 Reviews
+          </div>
+
+          <h2 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+            ابتسامة راقية تبدأ من
+            <span class="text-primary">
+              عيادة السعد
+            </span>
+          </h2>
+
+          <p class="text-slate-600 leading-9 text-lg mb-8">
+            نقدم تجربة طبية فاخرة في طب الأسنان تجمع بين الخبرة،
+            الراحة، والتقنيات الحديثة لنمنحك ابتسامة مثالية بثقة وأناقة.
+          </p>
+
+          <div class="bg-white premium-border shadow-premium rounded-3xl p-5 mb-8 inline-block">
+            <p class="text-primary font-bold text-lg">
+              "Keep smiles Great 😊"
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+
+            <a href="https://wa.me/971505007764"
+               target="_blank"
+               class="bg-gradient-to-l from-primary to-secondary text-white px-8 py-4 rounded-full font-bold shadow-premium hover:scale-105 transition flex items-center gap-3">
+
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              تواصل عبر واتساب
+            </a>
+
+            <a href="#services"
+               class="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition">
+
+              استكشف خدماتنا
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- IMAGE -->
+        <div class="relative">
+
+          <img src="photo1.jpg"
+               alt="Al Saad Dental Clinic"
+               class="rounded-[35px] shadow-2xl w-full object-cover floating-animation">
+
+          <!-- Floating Card -->
+          <div class="absolute -bottom-6 md:-left-6 left-1/2 md:translate-x-0 -translate-x-1/2 bg-white shadow-premium rounded-3xl p-5 w-[90%] md:w-72">
+
+            <div class="flex items-center gap-4">
+
+              <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+
+              <div>
+                <h4 class="font-black text-dark">
+                  تأمين صحي معتمد
+                </h4>
+
+                <p class="text-sm text-slate-500 leading-6">
+                  ACCEPTS MOST OF THE INSURANCE COMPANIES
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 bg-white">
+
+    <div class="container mx-auto px-5">
+
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+
+        <span class="text-primary font-bold tracking-wider">
+          خدماتنا المميزة
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-black mt-4 mb-6">
+          أحدث تقنيات طب الأسنان
+        </h2>
+
+        <p class="text-slate-600 leading-8">
+          نهتم بأدق التفاصيل لنمنحك تجربة علاجية مريحة ونتائج مثالية
+          باستخدام أحدث الأجهزة والخبرات الطبية.
+        </p>
+
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+        <!-- Cards -->
+        <div class="grid gap-6">
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border hover:-translate-y-2 transition">
+
+            <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl mb-5">
+              <i class="fa-solid fa-teeth-open"></i>
+            </div>
+
+            <h3 class="text-2xl font-black mb-4">
+              تجميل وتبييض الأسنان
+            </h3>
+
+            <p class="text-slate-600 leading-8">
+              حلول تجميلية احترافية تمنحك ابتسامة ناصعة وأكثر ثقة
+              باستخدام أحدث تقنيات التجميل الحديثة.
+            </p>
+
+          </div>
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border hover:-translate-y-2 transition">
+
+            <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl mb-5">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+
+            <h3 class="text-2xl font-black mb-4">
+              طب أسنان الأطفال
+            </h3>
+
+            <p class="text-slate-600 leading-8">
+              رعاية مريحة وآمنة للأطفال ضمن بيئة طبية لطيفة
+              تمنحهم الشعور بالراحة والطمأنينة.
+            </p>
+
+          </div>
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border hover:-translate-y-2 transition">
+
+            <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl mb-5">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+
+            <h3 class="text-2xl font-black mb-4">
+              خدمات الطوارئ
+            </h3>
+
+            <p class="text-slate-600 leading-8">
+              استجابة سريعة للحالات الطارئة مع رعاية احترافية
+              وعلاج فوري بأعلى معايير الجودة.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Image -->
+        <div class="relative">
+
+          <img src="photo2.jpg"
+               alt="Clinic Facility"
+               class="rounded-[35px] shadow-2xl w-full object-cover">
+
+          <div class="absolute top-6 right-6 bg-white/90 backdrop-blur-lg rounded-2xl px-5 py-4 shadow-premium">
+
+            <div class="flex items-center gap-3">
+
+              <div class="text-yellow-400 text-xl">
+                ★★★★★
+              </div>
+
+              <div>
+                <h4 class="font-black text-primary">
+                  4.8 تقييم ممتاز
+                </h4>
+
+                <p class="text-sm text-slate-500">
+                  Based on 110 reviews
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="bg-banner py-24 relative overflow-hidden">
+
+    <div class="container mx-auto px-5 text-center text-white relative z-10">
+
+      <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+        لأن ابتسامتك تستحق الأفضل
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-white/80 text-lg leading-9 mb-10">
+        خبرة طبية متميزة، رعاية راقية، وتقنيات حديثة تمنحك
+        تجربة علاجية متكاملة داخل عيادة السعد لطب الأسنان.
+      </p>
+
+      <a href="https://wa.me/971505007764"
+         target="_blank"
+         class="inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-full font-black shadow-2xl hover:scale-105 transition">
+
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        احجز استشارتك الآن
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="reviews" class="py-24 bg-light">
+
+    <div class="container mx-auto px-5">
+
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+
+        <span class="text-primary font-bold tracking-wider">
+          آراء المرضى
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-black mt-4 mb-6">
+          ثقة مرضانا هي نجاحنا الحقيقي
+        </h2>
+
+        <p class="text-slate-600 leading-8">
+          نفتخر بتجارب مرضانا الرائعة والتقييمات الإيجابية
+          التي تعكس جودة خدماتنا الطبية.
+        </p>
+
+      </div>
+
+      <!-- Rating -->
+      <div class="flex justify-center items-center gap-3 mb-12">
+
+        <div class="text-yellow-400 text-2xl">
+          ★★★★★
+        </div>
+
+        <div class="font-black text-primary text-xl">
+          4.8 Stars Rating Based on 110 Reviews
+        </div>
+
+      </div>
+
+      <!-- Cards -->
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <!-- Review -->
+        <div class="bg-white rounded-[30px] p-8 shadow-premium premium-border hover:-translate-y-2 transition relative">
+
+          <div class="absolute top-5 left-5 text-primary/10 text-5xl">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <div class="text-yellow-400 mb-5">
+            ★★★★★
+          </div>
+
+          <p class="text-slate-600 leading-9 mb-6">
+            "شكر خاص لدكتور رياض وتجربة فريدة من نوعها وكادر طبى فاهم فى شغلة ويهتمون لمصلحة المريض..."
+          </p>
+
+          <h4 class="font-black text-primary">
+            M B Z
+          </h4>
+
+        </div>
+
+        <!-- Review -->
+        <div class="bg-white rounded-[30px] p-8 shadow-premium premium-border hover:-translate-y-2 transition relative">
+
+          <div class="absolute top-5 left-5 text-primary/10 text-5xl">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <div class="text-yellow-400 mb-5">
+            ★★★★★
+          </div>
+
+          <p class="text-slate-600 leading-9 mb-6">
+            "شكراً لعيادة سعد، وشكر خاص للدكتور رياض الناصر ما شاء الله عليه والله مافي منو ايدو كتير خفيفة"
+          </p>
+
+          <h4 class="font-black text-primary">
+            Ghaith Fakhri
+          </h4>
+
+        </div>
+
+        <!-- Review -->
+        <div class="bg-white rounded-[30px] p-8 shadow-premium premium-border hover:-translate-y-2 transition relative">
+
+          <div class="absolute top-5 left-5 text-primary/10 text-5xl">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <div class="text-yellow-400 mb-5">
+            ★★★★★
+          </div>
+
+          <p class="text-slate-600 leading-9 mb-6">
+            "كل الشكر والتقدير لإدارة المركز وأخص بالشكر الدكتور رياض الناصر لكفاءته ومهارته الممتازة..."
+          </p>
+
+          <h4 class="font-black text-primary">
+            najm omar
+          </h4>
+
+        </div>
+
+        <!-- Review -->
+        <div class="bg-white rounded-[30px] p-8 shadow-premium premium-border hover:-translate-y-2 transition relative">
+
+          <div class="absolute top-5 left-5 text-primary/10 text-5xl">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <div class="text-yellow-400 mb-5">
+            ★★★★★
+          </div>
+
+          <p class="text-slate-600 leading-9 mb-6">
+            "بصراحة انا بالصدفة دخلت المركز في الدكتور رياض الناصر دكتور اسنان ما شاء الله كفاءة في العمل"
+          </p>
+
+          <h4 class="font-black text-primary">
+            نضال الطالب
+          </h4>
+
+        </div>
+
+        <!-- Review -->
+        <div class="bg-white rounded-[30px] p-8 shadow-premium premium-border hover:-translate-y-2 transition relative">
+
+          <div class="absolute top-5 left-5 text-primary/10 text-5xl">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
+          <div class="text-yellow-400 mb-5">
+            ★★★★★
+          </div>
+
+          <p class="text-slate-600 leading-9 mb-6">
+            "أود أن أتقدم بجزيل الشكر والعرفان إلى إدارة وكامل الكادر الطبي على استضافتي للعمل..."
+          </p>
+
+          <h4 class="font-black text-primary">
+            Dr. Reyad Alnasser
+          </h4>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-white">
+
+    <div class="container mx-auto px-5">
+
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+
+        <span class="text-primary font-bold tracking-wider">
+          تواصل معنا
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-black mt-4 mb-6">
+          نحن جاهزون لخدمتكم
+        </h2>
+
+        <p class="text-slate-600 leading-8">
+          احجز موعدك الآن واستمتع برعاية احترافية وتجربة علاجية راقية.
+        </p>
+
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+        <!-- Contact Cards -->
+        <div class="grid gap-6">
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border">
+
+            <div class="flex items-start gap-5">
+
+              <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-black mb-2">
+                  الهاتف وواتساب
+                </h3>
+
+                <a href="tel:+971505007764"
+                   class="text-slate-600 hover:text-primary text-lg font-semibold transition">
+                  +971 50 500 7764
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border">
+
+            <div class="flex items-start gap-5">
+
+              <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-black mb-2">
+                  الموقع
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+                  شارع التعاون - الخالدية - إمارة الشارقة - الإمارات العربية المتحدة
+                </p>
+
+                <p class="text-primary font-bold mt-2">
+                  897G+23 Sharjah, UAE
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Card -->
+          <div class="bg-light rounded-[28px] p-7 shadow-premium premium-border">
+
+            <div class="flex items-start gap-5">
+
+              <div class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-black mb-4">
+                  ساعات العمل
+                </h3>
+
+                <div class="space-y-3 text-slate-600">
+
+                  <div class="flex justify-between gap-6 border-b border-slate-200 pb-2">
+                    <span>السبت - الخميس</span>
+                    <span class="font-bold">12:00 PM – 8:00 PM</span>
+                  </div>
+
+                  <div class="flex justify-between gap-6">
+                    <span>الجمعة</span>
+                    <span class="text-red-500 font-bold">مغلق</span>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Facilities -->
+          <div class="bg-gradient-to-l from-primary to-secondary text-white rounded-[28px] p-8 shadow-2xl">
+
+            <h3 class="text-3xl font-black mb-6">
+              المرافق والخدمات
+            </h3>
+
+            <div class="space-y-4 text-white/90 leading-8">
+
+              <p>
+                ✔ مدخل صالح للكراسي المتحركة
+              </p>
+
+              <p>
+                ✔ دورة مياه تستوعب الكراسي المتحركة
+              </p>
+
+              <p>
+                ✔ NFC Mobile Payments
+              </p>
+
+              <p>
+                ✔ Credit Cards & Debit Cards
+              </p>
+
+              <p>
+                ✔ Payment Plans Available
+              </p>
+
+              <p>
+                ✔ تحديد المواعيد موصى به
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Side Image -->
+        <div>
+
+          <img src="photo3.jpg"
+               alt="Clinic"
+               class="rounded-[35px] shadow-2xl w-full object-cover h-full">
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-10">
+
+    <div class="container mx-auto px-5">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div class="text-center md:text-right">
+
+          <h3 class="font-black text-2xl mb-2">
+            عيادة السعد لطب الأسنان
+          </h3>
+
+          <p class="text-white/60">
+            © 2026 جميع الحقوق محفوظة
+          </p>
+
+        </div>
+
+        <!-- Social -->
+        <div class="flex items-center gap-4">
+
+          <a href="https://wa.me/971505007764"
+             target="_blank"
+             class="w-14 h-14 rounded-full bg-white/10 hover:bg-secondary transition flex items-center justify-center text-xl">
+
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="tel:+971505007764"
+             class="w-14 h-14 rounded-full bg-white/10 hover:bg-secondary transition flex items-center justify-center text-xl">
+
+            <i class="fa-solid fa-phone"></i>
+          </a>
+
+          <a href="#home"
+             class="w-14 h-14 rounded-full bg-white/10 hover:bg-secondary transition flex items-center justify-center text-xl">
+
+            <i class="fa-solid fa-tooth"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // Header Scroll Effect
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+
+      if(window.scrollY > 50){
+        header.classList.add("scale-[0.98]");
+      } else {
+        header.classList.remove("scale-[0.98]");
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
